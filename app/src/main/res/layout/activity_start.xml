@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_system_video"
+            style="@style/StartPageButton"
+            android:visibility="gone"
+            android:nextFocusUp="@id/btn_appinfo"
+            android:nextFocusDown="@id/btn_gsy_video"
+            android:text="MediaPlayer播放视频" />
+
+        <Button
+            android:id="@+id/btn_gsy_video"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_system_video"
+            android:nextFocusDown="@id/btn_system_audio"
+            android:text="GSYVideo播放视频" />
+
+        <Button
+            android:id="@+id/btn_system_audio"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_gsy_video"
+            android:nextFocusDown="@id/btn_multi_video"
+            android:text="MediaPlayer播放音频"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_web"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_system_audio"
+            android:nextFocusDown="@id/btn_multi_video"
+            android:text="去WebView"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_multi_video"
+            style="@style/StartPageButton"
+            android:visibility="gone"
+            android:nextFocusUp="@id/btn_system_audio"
+            android:nextFocusDown="@id/btn_list_gsyvideo"
+            android:text="多个视频播放" />
+
+        <Button
+            android:id="@+id/btn_list_gsyvideo"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_multi_video"
+            android:nextFocusDown="@id/btn_multi_gsyvideo"
+            android:text="ListView GSY视频播放"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_multi_gsyvideo"
+            style="@style/StartPageButton"
+            android:visibility="gone"
+            android:nextFocusUp="@id/btn_list_gsyvideo"
+            android:nextFocusDown="@id/btn_service_video"
+            android:text="多个GSY视频播放" />
+
+        <Button
+            android:id="@+id/btn_service_video"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_multi_gsyvideo"
+            android:nextFocusDown="@id/btn_appinfo"
+            android:text="Service播放视频"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_appinfo"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_service_video"
+            android:nextFocusDown="@id/btn_system_video"
+            android:text="获取第三方APP信息" />
+
+        <Button
+            android:id="@+id/btn_recyclerview"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_service_video"
+            android:nextFocusDown="@id/btn_system_video"
+            android:text="测试RecyclerView"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_constraintLayout"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_service_video"
+            android:nextFocusDown="@id/btn_system_video"
+            android:text="测试ConstraintLayout"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_bitmap"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_service_video"
+            android:nextFocusDown="@id/btn_system_video"
+            android:text="测试Bitmap"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_memory_leak"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_service_video"
+            android:nextFocusDown="@id/btn_system_video"
+            android:text="测试内存泄漏"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_custom_view"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_service_video"
+            android:nextFocusDown="@id/btn_system_video"
+            android:text="测试自定义View" />
+
+        <Button
+            android:id="@+id/btn_event_bus"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_service_video"
+            android:nextFocusDown="@id/btn_system_video"
+            android:text="测试EventBus" />
+
+        <Button
+            android:id="@+id/btn_rxjava"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_service_video"
+            android:nextFocusDown="@id/btn_system_video"
+            android:text="测试RxJava" />
+
+        <Button
+            android:id="@+id/btn_dagger"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_service_video"
+            android:nextFocusDown="@id/btn_system_video"
+            android:text="测试Dagger" />
+    </LinearLayout>
+</ScrollView>

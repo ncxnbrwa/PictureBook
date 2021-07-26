@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--这里的样式是有优先级的 第一个item的优先级最高 依次往下推-->
+    <!--选中且有焦点-->
+    <item android:state_checked="true" android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <gradient android:centerX="0.5" android:centerY="0.5" android:endColor="#f2eb56" android:gradientRadius="400" android:startColor="#99580c" android:type="radial" />
+        </shape>
+    </item>
+    <!--选中但没有焦点-->
+    <item android:state_checked="true" android:state_focused="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="6dp" />
+            <gradient android:centerX="0.5" android:centerY="0.5" android:endColor="#80f2eb56" android:gradientRadius="400" android:startColor="#8099580c" android:type="radial" />
+        </shape>
+    </item>
+    <!--其他-->
+    <item android:drawable="@color/transparent">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <gradient android:centerX="0.5" android:centerY="0.5" android:endColor="#507bee" android:gradientRadius="400" android:startColor="#0b5dab" android:type="radial" />
+        </shape>
+    </item>
+</selector>

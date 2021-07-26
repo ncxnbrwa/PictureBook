@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_layer_alpha"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_appinfo"
+            android:nextFocusDown="@id/btn_gsy_video"
+            android:text="图层带透明度叠加View" />
+
+        <Button
+            android:id="@+id/btn_control_view"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_system_video"
+            android:nextFocusDown="@id/btn_system_audio"
+            android:text="根据手指移动的View" />
+
+        <Button
+            android:id="@+id/btn_invalid_text"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_system_video"
+            android:nextFocusDown="@id/btn_system_audio"
+            android:text="划线的TextView" />
+
+        <Button
+            android:id="@+id/btn_horizontal_view"
+            style="@style/StartPageButton"
+            android:nextFocusUp="@id/btn_system_video"
+            android:nextFocusDown="@id/btn_system_audio"
+            android:text="自定义左右滑动的View" />
+    </LinearLayout>
+</ScrollView>

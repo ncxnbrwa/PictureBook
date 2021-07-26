@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MultiVideoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.picturebook.view.CustomVideoView
+            android:id="@+id/video1"
+            style="@style/multiVideoParams" />
+
+<!--        <com.example.picturebook.view.CustomVideoView-->
+<!--            android:id="@+id/video2"-->
+<!--            style="@style/multiVideoParams"-->
+<!--            android:layout_below="@+id/video1" />-->
+
+<!--        <com.example.picturebook.view.CustomVideoView-->
+<!--            android:id="@+id/video3"-->
+<!--            style="@style/multiVideoParams"-->
+<!--            android:layout_below="@+id/video2" />-->
+
+<!--        <com.example.picturebook.view.CustomVideoView-->
+<!--            android:id="@+id/video4"-->
+<!--            style="@style/multiVideoParams"-->
+<!--            android:layout_below="@+id/video3" />-->
+
+<!--        <com.example.picturebook.view.CustomVideoView-->
+<!--            android:id="@+id/video5"-->
+<!--            style="@style/multiVideoParams"-->
+<!--            android:layout_below="@+id/video4" />-->
+
+<!--        <com.example.picturebook.view.CustomVideoView-->
+<!--            android:id="@+id/video6"-->
+<!--            style="@style/multiVideoParams"-->
+<!--            android:layout_toRightOf="@+id/video1" />-->
+
+<!--        <com.example.picturebook.view.CustomVideoView-->
+<!--            android:id="@+id/video7"-->
+<!--            style="@style/multiVideoParams"-->
+<!--            android:layout_below="@+id/video6"-->
+<!--            android:layout_toRightOf="@+id/video1" />-->
+<!--        <com.example.picturebook.view.CustomVideoView-->
+<!--            android:id="@+id/video8"-->
+<!--            style="@style/multiVideoParams"-->
+<!--            android:layout_below="@+id/video7"-->
+<!--            android:layout_toRightOf="@+id/video1" />-->
+<!--        <com.example.picturebook.view.CustomVideoView-->
+<!--            android:id="@+id/video9"-->
+<!--            style="@style/multiVideoParams"-->
+<!--            android:layout_below="@+id/video8"-->
+<!--            android:layout_toRightOf="@+id/video1" />-->
+<!--        <com.example.picturebook.view.CustomVideoView-->
+<!--            android:id="@+id/video10"-->
+<!--            style="@style/multiVideoParams"-->
+<!--            android:layout_below="@+id/video9"-->
+<!--            android:layout_toRightOf="@+id/video1" />-->
+    </RelativeLayout>
+</ScrollView>

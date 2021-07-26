@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#daf3fe"
+    tools:context=".ConstraintLayoutActivity">
+
+
+    <!--    <TextView-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:background="#b4eaf6"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="A"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="25sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        tools:ignore="HardcodedText" />-->
+
+    <!--基线参照-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv1"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:padding="8dp"-->
+    <!--        android:text="30"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="¥"-->
+    <!--        android:textSize="12sp"-->
+    <!--        app:layout_constraintBaseline_toBaselineOf="@id/tv1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tv1" />-->
+
+    <!--角度约束-->
+    <!--    <ImageView-->
+    <!--        android:id="@+id/iv1"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:src="@drawable/ball_blue"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:src="@drawable/ball_green"-->
+    <!--        app:layout_constraintCircle="@id/iv1"-->
+    <!--        app:layout_constraintCircleAngle="45"-->
+    <!--        app:layout_constraintCircleRadius="100dp" />-->
+
+    <!--百分比摆放-->
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="#b4eaf6"
+                android:gravity="center"
+                android:text="66"
+                android:textSize="26sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.397"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.372" />
+
+    <!--goneMargin-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv1"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:background="#b4eaf6"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="A"-->
+    <!--        android:textSize="26sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        android:visibility="visible"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv2"-->
+    <!--        android:layout_width="50dp"-->
+    <!--        android:layout_height="20dp"-->
+    <!--        android:background="#b4eaf6"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="B"-->
+    <!--        android:textSize="16sp"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/tv1"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/tv1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tv1"-->
+    <!--        app:layout_goneMarginStart="100dp" />-->
+
+    <!--layout_constraintWidth_default,默认spread,会自动填满剩余空间-->
+    <!--设置percent的话,还要设置layout_constraintWidth_percent属性-->
+    <!--但是写了layout_constraintWidth_percent后，layout_constraintWidth_default="percent"其实就可以省略掉了。-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv1"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:background="#b4eaf6"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="A"-->
+    <!--        android:textSize="26sp"-->
+    <!--        android:visibility="visible"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintWidth_default="percent"-->
+    <!--        app:layout_constraintWidth_percent="0.2"/>-->
+
+    <!--layout_constraintWidth_default,使用wrap,不会超过margin的约束-->
+    <!--    <TextView-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginLeft="100dp"-->
+    <!--        android:layout_marginRight="100dp"-->
+    <!--        android:background="#b4eaf6"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="AAAAAAAAAAAAAAAAAA"-->
+    <!--        android:textSize="26sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintWidth_default="wrap" />-->
+
+    <!--layout_constrainedWidth强制控件不能超过margin的约束-->
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginLeft="100dp"-->
+    <!--        android:layout_marginRight="100dp"-->
+    <!--        android:background="#b4eaf6"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="AAAAAAAAAAAAAAAAAA"-->
+    <!--        android:textSize="26sp"-->
+    <!--        app:layout_constrainedWidth="true"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintWidth_default="spread" />-->
+
+    <!--宽高比例-->
+    <!--        <TextView-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="60dp"-->
+    <!--            android:layout_marginLeft="100dp"-->
+    <!--            android:layout_marginRight="100dp"-->
+    <!--            android:background="#b4eaf6"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="AAAAAAAAAAAAAAAAAA"-->
+    <!--            android:textSize="26sp"-->
+    <!--            app:layout_constraintDimensionRatio="3:1"-->
+    <!--            app:layout_constrainedWidth="true"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--链-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_a"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:background="#b4eaf6"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="A"-->
+    <!--        android:textSize="26sp"-->
+    <!--        app:layout_constrainedWidth="true"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/tv_b"-->
+    <!--        app:layout_constraintHorizontal_chainStyle="packed"-->
+    <!--        app:layout_constraintHorizontal_weight="3"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_b"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:background="#b4eaf6"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="B"-->
+    <!--        android:textSize="26sp"-->
+    <!--        app:layout_constrainedWidth="true"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/tv_c"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tv_a"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_c"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:background="#b4eaf6"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="C"-->
+    <!--        android:textSize="26sp"-->
+    <!--        app:layout_constrainedWidth="true"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_weight="2"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tv_b"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--链使用并设置weight权重,layout_width一定要设置0dp才有效果-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_a"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:background="#b4eaf6"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="A"-->
+    <!--        android:textSize="26sp"-->
+    <!--        app:layout_constrainedWidth="true"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/tv_b"-->
+    <!--        app:layout_constraintHorizontal_chainStyle="packed"-->
+    <!--        app:layout_constraintHorizontal_weight="3"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_b"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:background="#b4eaf6"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="B"-->
+    <!--        android:textSize="26sp"-->
+    <!--        app:layout_constrainedWidth="true"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/tv_c"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tv_a"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_c"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:background="#b4eaf6"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="C"-->
+    <!--        android:textSize="26sp"-->
+    <!--        app:layout_constrainedWidth="true"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_weight="1.5"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tv_b"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <!--参考线-->
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/line"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintGuide_percent="0.5" />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginLeft="100dp"-->
+    <!--        android:layout_marginRight="100dp"-->
+    <!--        android:background="#b4eaf6"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="AAAAAAAAAAAAAAAAAA"-->
+    <!--        android:textSize="26sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/line" />-->
+
+    <!--屏障-->
+<!--        <TextView-->
+<!--            android:id="@+id/textView1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:text="aaaaaaaa"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:text="cccccccccccccccccccccc"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView1" />-->
+
+<!--        <androidx.constraintlayout.widget.Barrier-->
+<!--            android:id="@+id/barrier"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:barrierDirection="end"-->
+<!--            app:constraint_referenced_ids="textView1,textView2" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView3"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:text="sndkajndskjandk\ndadsadasddsaddsd\nsfdrthdsdcerv\n65fs31f3f1d2"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/barrier"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--Group-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_a"-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="60dp"-->
+    <!--            android:layout_marginTop="56dp"-->
+    <!--            android:background="@color/tv_bg"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="A"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="25sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.15"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_b"-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="60dp"-->
+    <!--            android:layout_marginTop="280dp"-->
+    <!--            android:background="@color/tv_bg"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="B"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="25sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.75"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_c"-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="60dp"-->
+    <!--            android:layout_marginTop="164dp"-->
+    <!--            android:background="@color/tv_bg"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="C"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="25sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.43"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <androidx.constraintlayout.widget.Group-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:visibility="visible"-->
+    <!--            app:constraint_referenced_ids="tv_a,tv_b,tv_c" />-->
+
+    <!--流式虚拟布局,2.0新增功能-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/A"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:background="@color/tv_bg"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="A"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="25sp"-->
+    <!--        android:textStyle="bold" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/B"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:background="@color/tv_bg"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="B"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="25sp"-->
+    <!--        android:textStyle="bold" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/C"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:background="@color/tv_bg"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="C"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="25sp"-->
+    <!--        android:textStyle="bold" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/D"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:background="@color/tv_bg"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="D"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="25sp"-->
+    <!--        android:textStyle="bold" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/E"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:background="@color/tv_bg"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="E"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="25sp"-->
+    <!--        android:textStyle="bold" />-->
+
+    <!--    <androidx.constraintlayout.helper.widget.Flow-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:flow_wrapMode="chain"-->
+    <!--        app:flow_horizontalStyle="packed"-->
+    <!--        app:constraint_referenced_ids="A,B,C,D,E"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--层布局,他能保证覆盖的刚好是指定的一个或多个控件-->
+
+<!--    <androidx.constraintlayout.helper.widget.Layer-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@drawable/bg_picture_book"-->
+<!--        android:padding="10dp"-->
+<!--        app:constraint_referenced_ids="text,image" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/image"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/ball_green"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/text"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Android"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/image"-->
+<!--        app:layout_constraintStart_toStartOf="@id/image"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/image" />-->
+
+
+    <!--加强版的ImageView-->
+    <!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:src="@drawable/test_pic1"-->
+    <!--        app:altSrc="@drawable/test_pic2"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:crossfade="0.5"-->
+    <!--        app:roundPercent="0.8" />-->
+
+    <!--warmth属性可以用来调节色温，brightness属性用来调节亮度，
+    saturation属性用来调节饱和度，contrast属性用来调节对比度-->
+    <!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+    <!--        android:id="@+id/view1"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:src="@drawable/test_face_icon2"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/view2"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/view2"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/view2"-->
+    <!--        app:warmth="0" />-->
+
+    <!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+    <!--        android:id="@+id/view2"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:src="@drawable/test_face_icon2"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/view5"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/view3"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/view1"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:warmth="5" />-->
+
+    <!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+    <!--        android:id="@+id/view3"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:src="@drawable/test_face_icon2"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/view2"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/view2"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/view2"-->
+    <!--        app:warmth="9"-->
+    <!--        tools:layout_editor_absoluteY="0dp" />-->
+
+    <!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+    <!--        android:id="@+id/view4"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:src="@drawable/test_face_icon2"-->
+    <!--        app:brightness="0"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/view5"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/view5"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/view5"-->
+    <!--        tools:layout_editor_absoluteY="136dp" />-->
+
+    <!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+    <!--        android:id="@+id/view5"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:src="@drawable/test_face_icon2"-->
+    <!--        app:brightness="5"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/view8"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/view6"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/view4"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/view2" />-->
+
+    <!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+    <!--        android:id="@+id/view6"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:src="@drawable/test_face_icon2"-->
+    <!--        app:brightness="9"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/view5"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/view5"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/view5"-->
+    <!--        tools:layout_editor_absoluteY="136dp" />-->
+
+    <!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+    <!--        android:id="@+id/view7"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:src="@drawable/test_face_icon2"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/view8"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/view8"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/view8"-->
+    <!--        app:saturation="0"-->
+    <!--        tools:layout_editor_absoluteY="285dp" />-->
+
+    <!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+    <!--        android:id="@+id/view8"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:src="@drawable/test_face_icon2"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/view11"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/view9"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/view7"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/view5"-->
+    <!--        app:saturation="5" />-->
+
+    <!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+    <!--        android:id="@+id/view9"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:src="@drawable/test_face_icon2"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/view8"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/view8"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/view8"-->
+    <!--        app:saturation="9"-->
+    <!--        tools:layout_editor_absoluteY="296dp" />-->
+
+    <!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+    <!--        android:id="@+id/view10"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:src="@drawable/test_face_icon2"-->
+    <!--        app:contrast="0"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/view11"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/view11"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/view11"-->
+    <!--        tools:layout_editor_absoluteY="437dp" />-->
+
+    <!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+    <!--        android:id="@+id/view11"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:src="@drawable/test_face_icon2"-->
+    <!--        app:contrast="5"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/view12"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/view10"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/view8" />-->
+
+    <!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+    <!--        android:id="@+id/view12"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:src="@drawable/test_face_icon2"-->
+    <!--        app:contrast="9"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/view11"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/view11"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/view11"-->
+    <!--        tools:layout_editor_absoluteY="437dp" />-->
+
+
+    <!--MockView,有点像画原型图-->
+    <!--    <androidx.constraintlayout.utils.widget.MockView-->
+    <!--        android:id="@+id/avatar"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_marginStart="80dp"-->
+    <!--        android:layout_marginTop="100dp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <androidx.constraintlayout.utils.widget.MockView-->
+    <!--        android:id="@+id/name"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="30dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/avatar"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/avatar" />-->
+
+    <!--    <androidx.constraintlayout.utils.widget.MockView-->
+    <!--        android:id="@+id/age"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/avatar"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/avatar" />-->
+
+    <!--设置叠加的控件-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/vA"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_marginLeft="30dp"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:background="@color/colorPrimary"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="A"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <Space-->
+    <!--        android:id="@+id/space"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_marginRight="30dp"-->
+    <!--        android:layout_marginBottom="30dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/vA"-->
+    <!--        app:layout_constraintRight_toRightOf="@id/vA" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/vB"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:background="@color/colorAccent"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="B"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:layout_constraintLeft_toRightOf="@id/space"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/space" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

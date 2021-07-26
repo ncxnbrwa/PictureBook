@@ -1,0 +1,33 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'asm_lifecycle_repo' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.1'
+        classpath 'danny.lifecycle.plugin:asm_lifecycle_plugin:1.0.0'
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/public' }//jcenter
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }//gradle-plugin
+        maven { url 'https://maven.aliyun.com/repository/central' }//central
+        maven { url 'https://maven.aliyun.com/repository/google' }//google
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        google()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

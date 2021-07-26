@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MultiVideoActivity">
+
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.picturebook.view.exo.GSYExo2PlayerView
+            android:id="@+id/gsy_video1"
+            style="@style/multiGSYVideoParams" />
+
+        <com.example.picturebook.view.exo.GSYExo2PlayerView
+            android:id="@+id/gsy_video2"
+            style="@style/multiGSYVideoParams"
+            android:layout_below="@+id/gsy_video1" />
+
+        <com.example.picturebook.view.exo.GSYExo2PlayerView
+            android:id="@+id/gsy_video3"
+            style="@style/multiGSYVideoParams"
+            android:layout_below="@+id/gsy_video2" />
+
+        <com.example.picturebook.view.exo.GSYExo2PlayerView
+            android:id="@+id/gsy_video4"
+            style="@style/multiGSYVideoParams"
+            android:layout_toRightOf="@+id/gsy_video1" />
+
+<!--        <com.example.picturebook.view.exo.GSYExo2PlayerView-->
+<!--            android:id="@+id/gsy_video5"-->
+<!--            style="@style/multiGSYVideoParams"-->
+<!--            android:layout_below="@+id/gsy_video1"-->
+<!--            android:layout_toRightOf="@+id/gsy_video1" />-->
+
+<!--        <com.example.picturebook.view.exo.GSYExo2PlayerView-->
+<!--            android:id="@+id/gsy_video6"-->
+<!--            style="@style/multiGSYVideoParams"-->
+<!--            android:layout_below="@+id/gsy_video2"-->
+<!--            android:layout_toRightOf="@+id/gsy_video1" />-->
+    </RelativeLayout>
+</ScrollView>
